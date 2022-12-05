@@ -1,0 +1,661 @@
+.pjesa-link {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: teal;
+    border-top: black solid 2px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pjesa-link ul .link_n {
+    margin: 10px;
+    padding: 5px 9px;
+    list-style: none;
+    border: white solid 2px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.pjesa-link ul .link_n:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.pjesa-link ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.pjesa-link ul li:hover a {
+    color: black;
+    transition: 1s;
+}
+
+.arrow {
+    margin: 0px 10px;
+    list-style: none;
+}
+
+.arrow a i {
+    font-size: 30px;
+}
+
+
+/* pjesa shop */
+.pjesa-shop {
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.pjesa-shop h1 {
+    font-size: 27px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: black solid 2px;
+
+}
+
+.shiko {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: teal;
+    padding: 5px 15px;
+    border-radius: 7px;
+    transition: 1s;
+    border: gainsboro solid 2px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.shiko:hover {
+    background-color: gainsboro;
+    border: teal solid 2px;
+    transition: 1s;
+}
+
+.shiko:hover a {
+    color: black;
+    transition: 1s;
+}
+
+.shiko a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+}
+
+/* pjesa-kategorive */
+.kategorit {
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.kategorit h1 {
+    font-size: 27px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: black solid 2px;
+}
+
+.kategorit h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    background-color: teal;
+    color: white;
+}
+
+.kategorit a {
+    text-decoration: none;
+}
+
+/* pjesa formes-produktet */
+
+.new-prod {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 480px;
+    margin: auto;
+    box-shadow: 0px 0px 10px teal;
+    border-radius: 15px;
+}
+
+.form-wrapper form {
+    padding: 20px;
+}
+
+.form-elem {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper label {
+    font-size: 19px;
+}
+
+.form-wrapper input {
+    font-size: 16px;
+    padding: 3px;
+}
+
+.form-wrapper select {
+    font-size: 16px;
+    padding: 3px;
+}
+
+.sub input {
+    background-color: teal;
+    color: white;
+    border: teal solid 2px;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.sub input:hover {
+    background-color: gainsboro;
+    color: black;
+    transition: 1s;
+}
+
+.form-wrapper textarea {
+    resize: none;
+}
+
+.identifikohu {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.identifikohu a {
+    padding: 8px 23px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: teal solid 2px;
+    border-radius: 10px;
+    background-color: teal;
+    transition: 1s;
+}
+
+.identifikohu a:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+
+/* pjesa profilit */
+.pjesa-profilit {
+    margin: 10px auto 150px auto;
+
+}
+
+.pjesa-profilit h2 {
+    text-align: center;
+    font-size: 27px;
+    width: 50%;
+    margin: auto;
+    padding: 40px 0px;
+    margin-bottom: 20px;
+    border-bottom: black solid 2px;
+}
+
+.pjesa-profilit table {
+    width: 80%;
+    margin: auto;
+    background-color: teal;
+    border-collapse: collapse;
+    border: black solid 2px;
+    text-align: center;
+}
+
+.pjesa-profilit th,
+td {
+    color: white;
+}
+
+.pjesa-profilit th {
+    font-size: 22px;
+    background-color: black;
+    border: black solid 2px;
+    color: white;
+    padding: 8px;
+}
+
+.pjesa-profilit td {
+    font-size: 20px;
+    border: black solid 2px;
+    padding: 3px;
+}
+
+.pjesa-profilit img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.edit a {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: darkblue;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    transition: 1s;
+}
+
+.edit a:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.danger {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    font-size: 17px;
+    transition: 1s;
+}
+
+.danger:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.no-pord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pjesa-error {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    height: 200px;
+    background-color: teal;
+    border-radius: 7px;
+    color: white;
+    line-height: 70px;
+}
+
+
+
+
+
+
+/* single prod */
+.prod-single {
+    width: 90%;
+    margin: 90px auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 350px;
+    background-color: teal;
+}
+
+.prod2 {
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.prod2 h1 {
+    padding-bottom: 20px;
+
+}
+
+.prod2 h2 {
+    padding-top: 20px;
+    color: rgb(129, 2, 2);
+}
+
+.prod2 p {
+    padding-bottom: 25px;
+    max-height: 150px;
+    overflow-y: scroll;
+
+}
+
+.prod-single img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.shitesi {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shitesi h3 {
+    font-size: 25px;
+
+}
+
+/* single cat */
+.pjesa-cat {
+    margin-top: 40px;
+}
+
+.pjesa-cat h1 {
+    font-size: 27px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: black solid 2px;
+}
+
+.kategori1 {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    gap: 60px 40px;
+}
+
+.allpord {
+    position: fixed;
+    bottom: 5px;
+    right: 40px;
+    border: white solid 2px;
+    border-radius: 5px;
+    padding: 8px;
+    transition: 1s;
+}
+
+.allpord:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.allpord:hover a {
+    color: black;
+    transition: 1s;
+}
+
+.allpord a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* info profil */
+.info-profil {
+    width: 100%;
+    height: 80vh;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 10px teal;
+    border-radius: 5px;
+}
+
+.info-header {
+    padding: 20px;
+    background-color: teal;
+    color: white;
+}
+
+.info-text {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-text1 {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black solid 2px;
+}
+
+.info-button {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info-button button {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: teal;
+    border: teal solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+}
+
+.info-button button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.danger1 {
+    background-color: red !important;
+    border: red solid 2px !important;
+}
+
+.danger1:hover {
+    background-color: white !important;
+    border: red solid 2px !important;
+}
+
+.verifiko {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility:hidden;
+
+}
+.verifiko.active7{
+    visibility:visible;
+}
+
+.verifiko1 {
+    border-radius: 10px;
+    position: relative;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: gainsboro;
+    display: flex;
+    box-shadow: 0px 0px 10px teal;
+    flex-direction: column;
+}
+
+.verifiko-button{
+    width: 100%;
+    padding: 0px 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media(max-width:768px) {
+    .pjesa-shop {
+        padding-top: 70px;
+    }
+
+    .pjesa-profilit .qmimi {
+        display: none;
+    }
+
+    .kategorit {
+        padding-top: 70px;
+    }
+
+    .form-wrapper {
+        margin: auto;
+        width: 90%;
+    }
+
+    .new-prod {
+        height: 100vh;
+    }
+
+    .pjesa-profilit {
+        padding-top: 70px;
+    }
+
+    .prod-single {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: 250px 400px;
+    }
+
+    .pjesa-cat {
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
+
+    .allpord {
+        position: fixed;
+        top: 70px;
+        right: 15px;
+        height: 45px;
+        background-color: teal;
+
+    }
+
+    .info-card {
+        width: 300px;
+        height: 450px;
+    }
+
+    .info-profil {
+        margin-top: 75px;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:290px) {
+    .pjesa-shop {
+        padding-top: 100px;
+    }
+
+    .kategorit {
+        padding-top: 100px;
+    }
+
+    .prod-single {
+        margin-top: 150px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: 250px 350px;
+    }
+
+    .pjesa-cat {
+        margin-top: 100px;
+    }
+
+    .new-prod {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,30 @@
+extends ../layout 
+block content
+    .new-prod
+        .form-wrapper 
+            form(action="/products/create", method="post" enctype="multipart/form-data") 
+                .form-elem
+                    label(for="name") Emri i produktit:
+                    input(type="text" name="name" required)
+                .form-elem
+                    label(for="category") Kategoria:
+                    select(name="category")
+                        option(value="") Zgjidh nje Kategori 
+                        each e in categories 
+                            option(value=e._id)=e.catName   
+                .form-elem
+                    label(for="price") Cmimi:
+                    input(type="number" name="price" required)
+                .form-elem 
+                    label(for="description") Pershkrimi i produktit:
+                    textarea(name="description", cols="30", rows="7") 
+                .form-elem
+                    label(for="image") Foto e produktit:
+                    input(type="file" name="image" required)
+                br 
+                .form-elem.sub
+                    input(type="submit" value="Krijo Produkt")
+    .shiko 
+        a(href="/products") Shiko Produktet
+
+

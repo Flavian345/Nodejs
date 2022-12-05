@@ -1,0 +1,18 @@
+extends ../layout 
+block content
+   .new-prod
+      .form-wrapper 
+         form(action="/users/login", method="post")  
+               .form-elem 
+                  label(for="email") Email:
+                  input(type="email" name="email" required)
+               .form-elem 
+                  label(for="password") Password:
+                  input(type="password" name="password" required) 
+               br
+               .form-elem.sub
+                  input(type="submit" value="Lidhu")
+   .identifikohu 
+      a(href="/users/register")  Regjistrohu Ketu          
+
+

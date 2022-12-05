@@ -1,0 +1,86 @@
+extends layout 
+include ./mixins/ProductCard
+include ./mixins/CategoryCard
+block  content
+    .lart 
+        a(href="#home") 
+            <i class="fas fa-arrow-circle-up"></i>
+    .home-wrapper
+    .rreth-nesh 
+        h1 Rreth Nesh
+    .pjesa-info 
+        .info1
+            .text-card
+                h2 Shit-Blej Produkte 
+                p Këtu ju mund të shisni produkte që nuk ju nevojiten dhe të blini ato që ju nevojiten si: shtëpi, vetura, punë, kamera, telefona mobil dhe shumë të tjera.Produktet jane te llojeve dhe te kategorive te ndryshme ku ju munde te zgjidhni kategorin te cilen ju keni nevoj per ate lloje te produktit.
+                p.bold Per te shitur nje produkt mjafton vetem te jeni te regjistruar ne faqen tone.
+                .butonat 
+                    a(href="/users/register") 
+                        button Regjistrohu Tani 
+                    a(href="/users/login")
+                        button  Identifikohu
+        .info2 
+            img(src="./images/Foto/register1.jpg", alt="")
+    .pjesa-kategorive 
+        h1 Llojet e Kategorive 
+        .kategori1 
+            each category in categories 
+                +CategoryCard(category)
+    .hapsir-reklamuese
+        .reklama1 
+            h1 Tel: 044-111-222
+    .pjesa-produkteve
+        h1 Produktet e fundit 
+        .produkti1 
+            each product in products 
+                +ProductCard(product)
+    .shiko-me-shum 
+        a(href="./products")
+            button Shiko me shume 
+    .satistikat 
+        .sati
+            <i class="fab fa-shopify"></i>
+            h1 #{numri_prod.length} +
+            h2 Produkte
+        .sati
+            <i class="fas fa-user"></i>
+            h1 100+
+            h2 Perdorues
+        .sati 
+            <i class="fas fa-clock"></i>
+            h1 24/7
+            h2 Online
+    .top-produktet 
+        h1 Top Produktet e fundit 
+        .featured1 
+            each product in isFeatured 
+                +ProductCard(product)
+    .footer 
+        .foot1 
+            h1 Shes-Blej 
+            p Faqja Shes-Blej eshte krijuar me 10/09/2022 me qellim te mundesis qe perdoruesit te shesin produkte qe nuk ju nevojiten dhe poashtu te blejne produkte qe deshirojn.
+            .ikonat 
+                 <i class="fab fa-instagram"></i>
+                 <i class="fab fa-facebook-f"></i>
+                 <i class="fab fa-twitter"></i>
+                 <i class="fab fa-youtube"></i>
+        .foot1 
+            img(src="./images/Foto/buy-sell1.png", alt="")
+
+        .foot1#kontakti 
+            h1 Kontakti 
+            .tel 
+                <i class="fas fa-phone-alt"></i>
+                h2 +383-44-111-222
+            .tel 
+                <i class="fas fa-phone-alt"></i>
+                h2 +383-49-111-222
+            .tel 
+                <i class="fas fa-envelope"></i>
+                 h2 Shes-Blej@gmail.com
+            .tel 
+                <i class="fas fa-envelope"></i>
+                 h2 Shes-Blej@hotmail.com
+
+
+

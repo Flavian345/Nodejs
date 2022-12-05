@@ -1,0 +1,25 @@
+extends ../layout 
+block content
+   .new-prod
+      .form-wrapper 
+         form(action="/users/register", method="post") 
+               .form-elem.center
+                  label(for="info") Te dhenat te jene te sakta!
+               .form-elem
+                  label(for="username") Username:
+                  input(type="text" name="username" required)
+               .form-elem
+                  label(for="phone") Tel:
+                  input(type="text" name="phone" required) 
+               .form-elem
+                  label(for="email") Email:
+                  input(type="email" name="email" required)
+               .form-elem
+                  label(for="password") Password:
+                  input(type="password" name="password" required) 
+               .form-elem.sub
+                  input(type="submit" value="Regjistrohu")
+   .identifikohu 
+      a(href="/users/login")  Identifikohu
+
+

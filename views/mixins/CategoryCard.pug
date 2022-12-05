@@ -1,0 +1,5 @@
+mixin CategoryCard(category)
+    .category-cart 
+        a(href="/categories/"+category._id)
+            img(src="/images/category/"+category.catImg, alt="")
+            h2= category.catName 

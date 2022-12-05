@@ -1,0 +1,7 @@
+mixin ProductCard(product)
+    .product-cart 
+        a(href="/products/"+product._id)
+            img(src="/images/products/"+product.image, alt="")
+        .info
+            h2= product.name 
+            h3.card-price  #{product.price} $

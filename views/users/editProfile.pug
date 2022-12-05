@@ -1,0 +1,22 @@
+extends ../layout 
+block content
+   .new-prod
+      .form-wrapper 
+         form(action="/users/editProfile/"+user1._id, method="post") 
+               .form-elem.center
+                  label(for="info") Te dhenat te jene te sakta!
+               .form-elem
+                  label(for="username") Username:
+                  input(type="text" name="username" value=user1.username required)
+               .form-elem
+                  label(for="phone") Tel:
+                  input(type="text" name="phone" value=user1.phone required) 
+               .form-elem
+                  label(for="email") Email:
+                  input(type="email" name="email" value=user1.email required) 
+               .form-elem.sub
+                  input(type="submit" value="Perditeso Profilin")
+   .identifikohu 
+      a(href="/users/infoProfile")  Kthehu te Profili
+
+

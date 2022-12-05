@@ -1,0 +1,8 @@
+extends ../layout 
+include ../mixins/CategoryCard
+block content
+    .kategorit
+        h1 Llojet e Kategorive
+        .kategori1
+            each category in categories 
+                +CategoryCard(category)

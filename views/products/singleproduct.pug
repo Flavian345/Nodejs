@@ -1,0 +1,15 @@
+extends ../layout 
+block content
+    .prod-single 
+        .prod1 
+            img(src="/images/products/"+single.image, alt=single.name)
+        .prod2 
+            h1=single.name 
+            p=single.description
+            h2 Cmimi: #{single.price} $
+            .shitesi 
+                h3  Shitesi: #{single.seller}
+                h3 Tel: #{single.numri}
+    .shiko 
+        a(href="/products") Ktheu Pas
+

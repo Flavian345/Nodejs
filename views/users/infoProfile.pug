@@ -1,0 +1,36 @@
+extends ../layout
+block content
+    if user 
+        .info-profil 
+            .info-card 
+                .info-header 
+                        h1 Info Profile
+                .info-text
+                    .info-text1 
+                        h2 Emri: 
+                        h2=user.username
+                    .info-text1.email 
+                        h2 Email: 
+                        h2=user.email
+                    .info-text1 
+                        h2 Tel: 
+                        h2=user.phone
+                .info-button 
+                    a(href="/users/editProfile/"+user._id)
+                        button Edit Profile
+                    button.danger1#delete Delete Profile
+                    .verifiko
+                        .verifiko1 
+                            h2 A jeni te sigurt qe deshironi te fshihni profilin!
+                            .verifiko-button
+                                a(href="/users/infoProfile")
+                                    button Close 
+                                form(action="/users/deleteProfile/"+user._id method="POST")
+                                    button.danger1(type="submit" value="Delete") Delete Profile
+        .shiko 
+            a(href="/users/profile") Products
+    else
+        .id 
+            h1 Ju lutem identifikohuni
+        .shiko 
+            a(href="/users/login") Identifikohu ketu

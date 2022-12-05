@@ -1,0 +1,22 @@
+extends ../layout 
+block content
+    h2=title
+    .new-prod
+        .form-wrapper 
+            form(action="/categories/create", method="post" enctype="multipart/form-data") 
+                .form-elem
+                    label(for="catName") Emri i Kategoris:
+                    input(type="text" name="catName" required)
+                .form-elem
+                    label(for="catDesc") Pershkrimi i Kategoris:
+                    textarea(name="catDesc", cols="30", rows="10") 
+                .form-elem
+                    label(for="catImg") Foto e Kategoris:
+                    input(type="file" name="catImg" required)
+                br 
+                .form-elem.sub
+                    input(type="submit" value="Krijo Kategori")
+    .shiko 
+        a(href="/categories") Shiko Kategorit
+
+

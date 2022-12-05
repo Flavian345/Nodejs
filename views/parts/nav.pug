@@ -1,0 +1,46 @@
+.pjesa-header#home
+    .header 
+        .hedaer-title 
+            <i class="fa fa-star"></i>
+            h2 Shes-Blej
+        .header-profile
+            if user 
+                li#drop 
+                    <i class="fas fa-user"></i>
+                    h2=user.username
+                        .drop 
+                            .drop1 
+                                a(href="/users/profile") Products 
+                                a(href="/users/infoProfile") Profile
+            else 
+                .headerp 
+                    a(href="/users/login")
+                        <i class="fas fa-user"></i>
+                        h2 Profile
+
+            .header-menu 
+                <i class="fas fa-bars menu"></i>
+    nav#navbar 
+        ul
+            li 
+                a(href="/") Home 
+            li 
+                a(href="/products") Products 
+            li 
+                a(href="/categories") Category
+            li
+                a(href="/products/create") New Product
+            li
+                a(href="/categories/create") New Category
+            if  user  
+                li 
+                    a(href="/users/logout") Logout 
+            else 
+                li 
+                    a(href="/users/login") Login
+                li 
+                    a(href="/users/register") Register
+            li 
+                form(action="/products/search" method="GET")
+                    input(type="text" name="search" autocomplete="off" placeholder="Search..." action="/products/"+search)
+                    button(type="submit") Search  

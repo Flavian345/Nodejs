@@ -1,0 +1,10 @@
+extends ../layout
+include ../mixins/ProductCard
+block content 
+    .pjesa-cat
+        h1 Kategoria: #{catId.catName}
+        .kategori1
+            each product in prodCat
+                +ProductCard(product)
+    .shiko 
+        a(href="/categories") Ktheu Pas

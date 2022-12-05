@@ -1,0 +1,19 @@
+extends ../layout 
+block content
+    .new-prod
+        .form-wrapper 
+            form(action="/products/editProdAdmin/"+prod._id, method="post") 
+                .form-elem
+                    label(for="name") Emri i produktit:
+                    input(type="text" name="name" value=prod.name required) 
+                .form-elem
+                    label(for="price") Cmimi:
+                    input(type="number" name="price"  value=prod.price required)
+                .form-elem
+                    label(for="description") Pershkrimi i produktit:
+                    textarea(name="description", cols="30", rows="10")=prod.description
+                .form-elem.sub
+                    input(type="submit" value="Perditeso Produktin")
+    .shiko 
+        a(href="/users/profile") Kthehu Pas
+
